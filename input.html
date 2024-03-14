@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input</title>
+</head>
+<body>
+<!-- Input types -->
+<h1>Input types:</h1>
+<form action="#">
+<label for="name">Name:</label> <br>
+<input type="text" id="name" name="name" placeholder="Your Name" value=""> <br>
+<label for="lastname">Last Name:</label> <br>
+<input type="text" id="lastname" name="lastname" placeholder="Your Last Name" value=""> <br>
+<label for="password">Password:</label> <br>
+<input type="password" id="password" name="password"> <br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"> <br> <br>
+</form>
+
+
+<!-- Input type: radio -->
+<h1>Choose one of the players</h1>
+<form action="#">
+
+<input type="radio" id="lm" name="player" value="Leo Messi">
+<label for="lm">Leo Messi</label> <br>
+<input type="radio" id="cr" name="player" value="Cristiano Ronaldo">
+<label for="cr">Cristiano Ronaldo</label> <br>
+<input type="radio" id="njr" name="player" value="Neymar JR">
+<label for="njr">Neymar JR</label> <br> <br>
+</form>
+<input type="submit" value="Submit"> <br> <br>
+
+<!-- Input type: color -->
+<h1>Choose your favourite color:</h1>
+<form action="#">
+  <label for="color">Select your fav color:</label>
+  <input type="color" id="color" name="favcolor" value="#fff">
+  <input type="submit" value="Submit">
+</form>
+
+
+<!-- Input type: date -->
+<form action="#">
+  <label for="date">Today is:</label>
+<input type="date" id="date" name="date">
+<input type="submit" value="Submit">
+</form>
+
+
+
+
+</body>
+</html>

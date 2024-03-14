@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form HTML</title>
+</head>
+<body>
+<h1>HTML Forms</h1>
+<form action="#">
+<label for="myinput">Name:</label><br>
+<input type="text" id="myinput" name="myinput" placeholder="Your Name"> <br>
+
+<label for="myinput2">Last Name</label><br>
+<input type="text" id="myinput2" name="myinput2" placeholder="Your Last Name"> <br>
+<input type="submit" value="Submit"> <br> <br>
+</form>
+
+<!-- Multiple choosing option -->
+<form action="#">
+<label for="cars">Choose your favourite ones:</label> <br>
+<select name="cars" id="cars" multiple>
+<option value="tesla">Tesla</option>
+<option value="porsche">Porsche</option>
+<option value="bmw">BMW</option>
+<option value="audi">Audi</option>
+</select> <br> <br>
+<input type="submit" value="Submit">
+
+</form>
+<p>You can choose multiple options by pressing 'Ctrl'</p>
+
+
+<!-- Fieldset -->
+<form action="#">
+<fieldset>
+  <legend>Formalia:</legend>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Your Name"> <br> <br>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname" placeholder="Your Last Name"> <br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+<!-- Datalist -->
+<h1>Social Media datalist:</h1>
+<form action="#">
+  <input list="socialmedia" name="browser">
+  <datalist id="socialmedia">
+    <option value="Instagram">
+    <option value="X">
+    <option value="TikTok">
+    <option value="Snapchat">
+  </datalist>
+  <input type="submit" value="Submit"> <br> <br> <br>
+</form>
+
+
+<h1>Artists:</h1>
+<form action="#">
+  <input list="artists" name="artists">
+  <datalist id="artists">
+    <option value="Kendrick Lamar">
+    <option value="Eminem">
+    <option value="J Cole">
+    <option value="21 Savage">
+  </datalist>
+  <input type="submit" value="Submit"> <br> <br>
+
+</form>
+
+<h1>Sports:</h1>
+<form action="#">
+  <input list="sports" name="sports">
+  <datalist id="sports">
+    <option value="Soccer">
+    <option value="Football">
+    <option value="Volleyball">
+    <option value="Basketball">
+    <option value="Chess">
+    <option value="Box">
+  </datalist>
+  <input type="submit" value="Submit"> <br> <br>
+</form>
+
+<!-- Output -->
+<h1>Output:</h1>
+<form action="#" oninput="x.value=parseInt(z.value)+parseInt(y.value)">
+0
+<input type="range" id="z" name="z" value="50">
+100 +
+<input type="number" id="y" name="y" value="50">
+=
+<output name="x" for="z y"></output> <br> <br>
+<input type="submit" value="Submit"> <br> <br> <br>
+</form>
+
+
+<form action="#" oninput="r.value=parseInt(r1.value)+parseInt(r2.value)">
+  0
+  <input type="range" id="r1" name="r1" value="0">
+  100 +
+  <input type="number" id="r2" name="r2" value="100">
+  =
+  <output name="r" for="r1 r2"></output> <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+</body>
+</html>
